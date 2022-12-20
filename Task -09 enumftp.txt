@@ -1,0 +1,44 @@
+# Nmap 7.92 scan initiated Fri Aug 26 05:06:24 2022 as: nmap -Pn -sV -O -A -T3 -oN enumftp.txt 10.10.199.184
+Nmap scan report for 10.10.199.184 (10.10.199.184)
+Host is up (0.17s latency).
+Not shown: 999 closed tcp ports (reset)
+PORT   STATE SERVICE VERSION
+21/tcp open  ftp     vsftpd 2.0.8 or later
+| ftp-syst: 
+|   STAT: 
+| FTP server status:
+|      Connected to ::ffff:10.14.28.171
+|      Logged in as ftp
+|      TYPE: ASCII
+|      No session bandwidth limit
+|      Session timeout in seconds is 300
+|      Control connection is plain text
+|      Data connections will be plain text
+|      At session startup, client count was 2
+|      vsFTPd 3.0.3 - secure, fast, stable
+|_End of status
+| ftp-anon: Anonymous FTP login allowed (FTP code 230)
+|_-rw-r--r--    1 0        0             353 Apr 24  2020 PUBLIC_NOTICE.txt
+No exact OS matches for host (If you know what OS is running on it, see https://nmap.org/submit/ ).
+TCP/IP fingerprint:
+OS:SCAN(V=7.92%E=4%D=8/26%OT=21%CT=1%CU=40256%PV=Y%DS=2%DC=T%G=Y%TM=63088D2
+OS:F%P=x86_64-pc-linux-gnu)SEQ(SP=FE%GCD=1%ISR=104%TI=Z%CI=I%II=I%TS=A)OPS(
+OS:O1=M506ST11NW7%O2=M506ST11NW7%O3=M506NNT11NW7%O4=M506ST11NW7%O5=M506ST11
+OS:NW7%O6=M506ST11)WIN(W1=68DF%W2=68DF%W3=68DF%W4=68DF%W5=68DF%W6=68DF)ECN(
+OS:R=Y%DF=Y%T=40%W=6903%O=M506NNSNW7%CC=Y%Q=)T1(R=Y%DF=Y%T=40%S=O%A=S+%F=AS
+OS:%RD=0%Q=)T2(R=N)T3(R=N)T4(R=Y%DF=Y%T=40%W=0%S=A%A=Z%F=R%O=%RD=0%Q=)T5(R=
+OS:Y%DF=Y%T=40%W=0%S=Z%A=S+%F=AR%O=%RD=0%Q=)T6(R=Y%DF=Y%T=40%W=0%S=A%A=Z%F=
+OS:R%O=%RD=0%Q=)T7(R=Y%DF=Y%T=40%W=0%S=Z%A=S+%F=AR%O=%RD=0%Q=)U1(R=Y%DF=N%T
+OS:=40%IPL=164%UN=0%RIPL=G%RID=G%RIPCK=G%RUCK=G%RUD=G)IE(R=Y%DFI=N%T=40%CD=
+OS:S)
+
+Network Distance: 2 hops
+Service Info: Host: Welcome
+
+TRACEROUTE (using port 554/tcp)
+HOP RTT       ADDRESS
+1   171.71 ms 10.14.0.1 (10.14.0.1)
+2   171.98 ms 10.10.199.184 (10.10.199.184)
+
+OS and Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Fri Aug 26 05:06:55 2022 -- 1 IP address (1 host up) scanned in 32.16 seconds
